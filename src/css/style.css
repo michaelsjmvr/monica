@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.titulo{
+    color: #79B0AE;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: 0.6s;
+}
+a:hover{
+    color: #7cafae;
+}
+
+/* Esconder o menu vertical por padrão */
+.menu-vertical {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    overflow-y: auto;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+}
+
+/* Botão fixo no canto inferior esquerdo */
+.menu-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Estilização dos links */
+.menu-vertical ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-vertical ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-vertical ul li a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar o menu quando aberto */
+.menu-vertical.open {
+    left: 0;
+}
+
+.perfil-1 {
+    width: 260px;
+    height: 260px; /* A altura deve ser igual à largura */
+    border-radius: 50%; /* Para criar um círculo perfeito */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    margin: 30px;
+}
+
+.paragrafos-sobre{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.paragrafos-sobre-shadow {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 15px; /* Adiciona espaço interno */
+    background-color: #fff; /* Fundo branco para destacar a sombra */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+.accordion-button {
+    background-color: #79B0AE; /* Cor de fundo personalizada */
+    color: #fff; /* Cor do texto branco */
+    border: 2px solid #79B0AE; /* Cor da borda personalizada */
+    box-shadow: none; /* Remove a sombra padrão */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #79B0AE; /* Cor de fundo ao abrir a acordeão */
+    color: #fff; /* Mantém o texto branco */
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125); /* Sombra interna */
+    border-color: #79B0AE; /* Cor da borda ao abrir a acordeão */
+}
+
+.accordion-button:focus {
+    outline: 2px solid #79B0AE; /* Cor do foco personalizada */
+    box-shadow: none; /* Remove a sombra de foco padrão */
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1); /* Ajusta o ícone para uma cor clara */
+}
+
+.accordion-header .accordion-button {
+    border-radius: 2px; /* Borda arredondada */
+}
+
+/* Custom focus color for form elements */
+.form-control:focus, .form-select:focus {
+    border-color: #2fc9c4;
+    box-shadow: 0 0 0 .25rem rgba(47, 201, 196, .25);
+}
+
+.btn-agendar{
+    width: 210px;
+    height: 40px;
+    background-color: #32b6b1;
+    border:none;
+    border-radius: 4px;
+    margin-top:12px;
+    color: white;
+    transition: 0.6s;
+}
+.btn-agendar:hover{
+    background-color: #2fc9c4;
+}
+
+.btn-contato{
+    background-color: #32b6b1;
+    padding: 10px 20px;
+    border-radius:3px;
+    color: white;
+}
+.btn-contato:hover{
+    background-color: #2fc9c4;
+    color: white;
+}
+
+
+.card{
+    width: 300px;
+    height: auto;
+    margin: 6px;
+}
+
+iframe{
+    margin: 12px;
+}
+
+.btn-subir{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (min-width: 1400px) {
+    .inicio{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .logo-1 {
+        width: 800px;
+        height: auto;
+    }
+
+    .sobre{
+        width: 100%;
+        height: 100dvh;
+        background-color: #f3f3f3;
+    }
+
+    .duvidas{
+        width: 100%;
+        height: 100dvh;
+        background-color: white;
+    }
+
+    .agendamento{
+        width: 100%;
+        height: 100dvh;
+        background-color: #f3f3f3;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .inicio{
+        width: 100%;
+        height: 101dvh;
+    }
+    
+    .logo-1 {
+        width: 500px;
+        height: auto;
+    }
+
+    .sobre{
+        width: 100%;
+        height: 101vh;
+        background-color: #f3f3f3;
+    }
+
+    .agendamento{
+        width: 100%;
+        height: 101dvh;
+        background-color: #f3f3f3;
+    }
+
+    .contato{
+        width: 100%;
+        height: 100dvh;
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .inicio{
+        width: 100%;
+        height: 100dvh;
+    }
+
+    .logo-1 {
+        width: 800px; /* Ajuste conforme necessário para dispositivos móveis */
+        height: auto;
+        margin-top:150px;
+    }
+
+    .sobre{
+        width: 100%;
+        height: 100dvh;
+        background-color: #f3f3f3;
+    }
+
+    .perfil-1 {
+        width: 160px;
+        height: 160px; /* A altura deve ser igual à largura */
+        margin: 12px;
+    }
+
+    .duvidas{
+        width: 100%;
+        height: 100dvh;
+    }
+
+    .agendamento{
+        width: 100%;
+        height: 100dvh;
+        background-color: #f3f3f3;
+    }
+
+    .contato{
+        width: 100%;
+        height: 100dvh;
+        margin-top: 80px;
+    }
+
+    .card-box{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    iframe{
+        width: 480px;
+    }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/src/img/css/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
     <link rel="icon" href="/src/img/img-002.png" type="image/png">
     <title>Monica Almeira | Explorando a Mente e a Alma - Psicanálise e Autoconhecimento</title>
 </head>
@@ -16,11 +16,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="d-flex justify-content-center">
-                            <a class="m-4" href="#">Inicio</a>
-                            <a class="m-4" href="#">Sobre</a>
-                            <a class="m-4" href="#">Dúvidas Frequentes</a>
-                            <a class="m-4" href="#">Agendamento</a>
-                            <a class="m-4" href="#">Contato</a>
+                            <a class="m-4" href="#sobre">Sobre</a>
+                            <a class="m-4" href="#duvidas">Dúvidas Frequentes</a>
+                            <a class="m-4" href="#agendamento">Agendamento</a>
+                            <a class="m-4" href="#contato">Contato</a>
                         </ul>
                     </div>
                 </div>
@@ -29,11 +28,10 @@
                 <button class="menu-toggle-btn">&#9776;</button>
                 <div class="menu-vertical">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Dúvidas Frequentes</a></li>
-                        <li><a href="#">Agendamento</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+                        <li><a href="#agendamento">Agendamento</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -48,11 +46,170 @@
             </div>
         </main>
     </section>
-    <section id="sobre"></section>
-    <section id="duvidas"></section>
-    <section id="agendamento"></section>
-    <section id="contato"></section>
-
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div>
+                        <h1 class="text-center titulo">Sobre</h1>
+                        <p class="text-center paragrafos-sobre">
+                            "A psicanálise desvenda o que está oculto em nós, iluminando os caminhos para a transformação interior."
+                        </p>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <img src="/src/img/img-003.jpg" alt="Imagem perfil" class="img-fluid perfil-1">
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center flex-wrap">
+                            <p class="col-md-8 me-2 paragrafos-sobre paragrafos-sobre-shadow">
+                                Especialidades: transtornos, depressão, ansiedade, relacionamentos, dependência emocional em adultos e adolescentes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="duvidas" class="duvidas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div>
+                        <h1 class="text-center titulo">Dúvidas Frequentes</h1>
+                        <div class="col-md-12 d-flex justify-content-center flex-wrap">
+                            <div class="col-md-10">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                É possível fazer atendimento online? Como funciona?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                Sim, os atendimentos online são realizados via chamada de vídeo, com a mesma duração e ética de uma sessão presencial. Inicialmente voltados para quem mora fora do Rio de Janeiro ou tem dificuldades de deslocamento, agora estão acessíveis a todos. A intenção é manter o acesso à psicanálise, seja no consultório ou à distância.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                Qual é a diferença entre psicanálise, psicologia e psiquiatria?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                A psicanálise explora o inconsciente e foca nas singularidades, ajudando o analisando a entender sua responsabilidade em sua vida e emoções. A psicologia estuda o comportamento humano e busca alinhar a experiência do paciente a padrões coletivos. A psiquiatria, única entre as três, pode prescrever medicamentos, e muitas vezes essas áreas trabalham juntas para o bem-estar do paciente.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Como funciona o pagamento em psicanálise?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                As primeiras sessões, chamadas de entrevistas preliminares, são gratuitas. Durante essas sessões, analista e analisando se conhecem e discutem o valor das sessões. O pagamento em psicanálise tem um significado simbólico que vai além do financeiro, representando o comprometimento do analisando com o processo.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                                Como é garantido o sigilo?
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                O processo psicanalítico convida o analisando a falar livremente. Para isso, é fundamental que o analista ofereça uma escuta sem julgamentos e mantenha um compromisso absoluto com o sigilo. Qualquer dúvida adicional? Entre em contato pelo e-mail contato@gmail.com.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section id="agendamento" class="container-fluid d-flex flex-column justify-content-center align-items-center min-vh-100 agendamento">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-12">
+                <h2 class="mb-4 titulo">Agendamento</h2>
+                <div class="mb-2">
+                    <label for="nomeInput" class="form-label">Digite seu nome</label>
+                    <input type="text" class="form-control" id="nomeInput" placeholder="John Wick">
+                </div>
+                <div class="mb-2">
+                    <label for="emailInput" class="form-label">Digite seu email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="johnwick@gmail.com">
+                </div>
+                <label for="diaSelect" class="form-label">Selecionar dia</label>
+                <select id="diaSelect" class="form-select">
+                    <option value="1">Segunda-Feira</option>
+                    <option value="2">Terça-Feira</option>
+                    <option value="3">Quarta-Feira</option>
+                    <option value="4">Quinta-Feira</option>
+                    <option value="5">Sexta-Feira</option>
+                </select>
+                <label for="horaSelect" class="form-label">Selecionar hora</label>
+                <select id="horaSelect" class="form-select">
+                    <option value="1">8:00</option>
+                    <option value="2">9:00</option>
+                    <option value="3">10:00</option>
+                    <option value="4">11:00</option>
+                    <option value="5">14:00</option>
+                    <option value="6">15:00</option>
+                    <option value="7">16:00</option>
+                    <option value="8">17:00</option>
+                </select>
+                <button type="button" class="btn-agendar" onclick="confirmarAgendamento()">Agendar</button>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div>
+                        <h2 class="text-center titulo">Contato</h2>
+                        <div class="d-flex card-box">
+                            <div class="card">
+                                <h5 class="card-header titulo"><i class="bi bi-instagram"></i> Instagram</h5>
+                                <div class="card-body">
+                                <p class="card-text">instagram.com/monica._psicanalise</p>
+                                <a  target="_blank"  href="https://www.instagram.com/monica._psicanalise/" class="btn-contato">Acessar</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h5 class="card-header titulo"><i class="bi bi-whatsapp"></i> Whatsapp</h5>
+                                <div class="card-body">
+                                <p class="card-text">(21) 9 7074-6627</p>
+                                <a href="https://wa.me/5521970746627?text=Olá,%20tudo%20bem,%20Monica?" target="_blank" class="btn-contato">Acessar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="text-center titulo">Região de atendimento</h2>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58758.02052498626!2d-43.408832870983204!3d-23.009952317186713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda4a27b6fe5d%3A0x63c3f6d1d89e0f4e!2sBarra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1723322560181!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Monica. Psicanálise. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#inicio" class="btn-subir"><i class="bi bi-arrow-up"></i></a>
+    </footer>
+    
     <script src="/src/javascript/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
